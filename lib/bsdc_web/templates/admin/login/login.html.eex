@@ -1,0 +1,21 @@
+<div>
+  <form class="pure-form pure-form-stacked">
+    <fieldset>
+      <legend>Sign In</legend>
+
+      <label for="username">
+        <input name="username" type="text" placeholder="username">
+      </label>
+      
+      <label for="password">
+        <input name="password" type="password" placeholder="password">
+      </label>
+
+      <label for="remember">
+        <input name="remember" type="checkbox"> Remember me
+      </label>
+
+      <input class="pure-button pure-button-primary" type="submit" value="Sign In">
+    </fieldset>
+  </form>
+</div>

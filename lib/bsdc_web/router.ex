@@ -17,11 +17,13 @@ defmodule BsdcWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+
     post "/charge", PageController, :charge
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", BsdcWeb do
-  #   pipe_through :api
-  # end
+  scope "/admin", BsdcWeb.Admin do
+    pipe_through :browser
+
+    get "/login", LoginController, :show
+  end
 end

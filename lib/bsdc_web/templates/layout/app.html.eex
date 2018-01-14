@@ -8,6 +8,7 @@
     <meta name="author" content="">
 
     <title>Hello Bsdc!</title>
+
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
@@ -19,7 +20,6 @@
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
-
     </div> <!-- /container -->
     <script src="https://js.stripe.com/v3/"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
